@@ -6,7 +6,7 @@ import { uidData } from "./uidData";
  
 const Component = () => {
     const searchParams = new URLSearchParams(document.location.search)
-    const par_uid = searchParams.get('IUD')
+    const par_uid = searchParams.get('UID')
     const getUID = uidData.filter (ID => ID.UID === par_uid )
  
     return (
